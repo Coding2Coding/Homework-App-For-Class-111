@@ -12,7 +12,7 @@ var camera = document.getElementById("camera");
 Webcam.attach(camera);
 
 function takePicture() {
-    Webcame.snap(function (image) {
+    Webcam.snap(function (image) {
         document.getElementById("picture").innerHTML = "<img src='"+image+"' id='clickedPicture'>";
     });
 }
